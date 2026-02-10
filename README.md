@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -92,8 +92,8 @@
 
     <header>
       <h1>Fajar Ibrahim</h1>
-      <p>Email: fajar@email.com | WhatsApp: 08xxxxxxxxxx</p>
-      <p>Siswa SMK – Teknik Komputer dan Jaringan</p>
+      <p>Email: fajaribrahim@email.com | WhatsApp: 083815279890</p>
+      <p>Siswa SMKN 1 RANGKASBITUNG– Teknik Komputer dan Jaringan</p>
     </header>
 
     <section>
