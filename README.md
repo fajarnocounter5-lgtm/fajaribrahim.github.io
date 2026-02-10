@@ -137,7 +137,7 @@
     </div>
     <div>
       <h1>Fazar Ibrahim</h1>
-      <p>Siswa SMKN 1 RANGKASBITUNG – Teknik Komputer dan Jaringan</p>
+      <p>Siswa SMKN 1 RANGKASBITUNG – Teknik Jaringan Komputer dan Telekomunikasi</p>
     </div>
   </div>
 
@@ -151,9 +151,9 @@
     <h3>Pendidikan</h3>
     <ul>
       <li>
-        <strong>SMK</strong><br>
+        <strong>SMKN 1 RANGKASBITUNG</strong><br>
         Teknik Komputer dan Jaringan<br>
-        2023 – Sekarang
+        Tahun Ajaran 2025/2026
       </li>
     </ul>
 
@@ -187,8 +187,7 @@
       </ul>
     </div>
 
-    <h2>Referensi</h2>
-    <p>Referensi tersedia atas permintaan.</p>
+    <
   </main>
 
 </div>
