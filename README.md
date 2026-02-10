@@ -2,85 +2,124 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>CV Fajar Ibrahim</title>
+  <title>CV Fazar Ibrahim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #f0f2f5;
       margin: 0;
-      padding: 20px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #ddd;
     }
 
-    .container {
-      max-width: 850px;
-      background: #ffffff;
+    .cv {
+      max-width: 1000px;
       margin: auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      min-height: 100vh;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      grid-column: 1 / -1;
+      background: #3e4147;
+      color: white;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
 
-    header {
-      text-align: center;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 20px;
-      margin-bottom: 25px;
+    .photo img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
     }
 
-    header h1 {
+    .header h1 {
       margin: 0;
-      color: #2c3e50;
-      font-size: 32px;
+      font-size: 28px;
     }
 
-    header p {
-      margin: 5px 0;
-      color: #555;
+    .header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar {
+      background: #f1ece6;
+      padding: 30px;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+      border-bottom: 2px solid #555;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .sidebar p,
+    .sidebar li {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .sidebar ul {
+      padding-left: 18px;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .content {
+      padding: 30px;
+    }
+
+    .content h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .content ul {
+      padding-left: 18px;
       font-size: 14px;
     }
 
-    section {
-      margin-bottom: 25px;
+    .job {
+      margin-bottom: 20px;
     }
 
-    section h2 {
-      color: #3498db;
-      font-size: 20px;
-      margin-bottom: 10px;
-      border-left: 5px solid #3498db;
-      padding-left: 10px;
+    .job strong {
+      display: block;
+      font-size: 15px;
     }
 
-    section p {
-      color: #333;
-      line-height: 1.6;
+    .job span {
+      font-size: 13px;
+      color: #666;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-      color: #333;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-      margin-top: 30px;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 20px;
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .cv {
+        grid-template-columns: 1fr;
       }
 
-      header h1 {
-        font-size: 26px;
+      .header {
+        flex-direction: column;
+        text-align: center;
       }
     }
   </style>
@@ -88,57 +127,71 @@
 
 <body>
 
-  <div class="container">
+<div class="cv">
 
-    <header>
-      <h1>Fajar Ibrahim</h1>
-      <p>Email: fajaribrahim@email.com | WhatsApp: 083815279890</p>
-      <p>Siswa SMKN 1 RANGKASBITUNG– Teknik Komputer dan Jaringan</p>
-    </header>
-
-    <section>
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan yang memiliki
-        minat di bidang teknologi informasi, khususnya jaringan komputer dan
-        administrasi sistem. Terbiasa bekerja secara rapi, disiplin, dan
-        bertanggung jawab.
-      </p>
-    </section>
-
-    <section>
-      <h2>Pendidikan</h2>
-      <ul>
-        <li><strong>SMK</strong> — Teknik Komputer dan Jaringan</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Keahlian</h2>
-      <ul>
-        <li>Instalasi & konfigurasi jaringan dasar</li>
-        <li>Microsoft Word, Excel, dan PowerPoint</li>
-        <li>HTML & CSS dasar</li>
-        <li>Pengarsipan dan administrasi dokumen</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Pengalaman</h2>
-      <ul>
-        <li>
-          <strong>PKL – Diskominfo</strong><br>
-          Membantu kegiatan administrasi, pengelolaan jaringan dasar, dan
-          operasional lapangan.
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      © 2026 Fajar Ibrahim — CV Online GitHub Pages
-    </footer>
-
+  <!-- HEADER -->
+  <div class="header">
+    <div class="photo">
+      <!-- Ganti foto.jpg dengan foto kamu -->
+      <img src="foto.jpg" alt="Foto Profil">
+    </div>
+    <div>
+      <h1>Fazar Ibrahim</h1>
+      <p>Siswa SMKN 1 RANGKASBITUNG – Teknik Komputer dan Jaringan</p>
+    </div>
   </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Detail Kontak</h3>
+    <p>📧 fazaribrahum@email.com</p>
+    <p>📞 083815279890</p>
+    <p>📍 Rangkasbitung Lebak Banten</p>
+
+    <h3>Pendidikan</h3>
+    <ul>
+      <li>
+        <strong>SMK</strong><br>
+        Teknik Komputer dan Jaringan<br>
+        2023 – Sekarang
+      </li>
+    </ul>
+
+    <h3>Keterampilan</h3>
+    <ul>
+      <li>Networking Dasar</li>
+      <li>Microsoft Office</li>
+      <li>HTML & CSS Dasar</li>
+      <li>Administrasi</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <h2>Ringkasan</h2>
+    <p>
+      Siswa SMKN 1 RANGKASBITUNG jurusan Teknik Komputer dan Jaringan yang memiliki minat di
+      bidang IT dan jaringan komputer. Terbiasa bekerja secara rapi,
+      disiplin, dan bertanggung jawab.
+    </p>
+
+    <h2>Pengalaman Kerja</h2>
+
+    <div class="job">
+      <strong>PKL – Diskominfo</strong>
+      <span>Juli 2024 – November 2024</span>
+      <ul>
+        <li>Membantu pengelolaan dan dokumentasi administrasi.</li>
+        <li>Konfigurasi jaringan dasar menggunakan Cisco Packet Tracer.</li>
+        <li>Mendukung kegiatan operasional lapangan.</li>
+      </ul>
+    </div>
+
+    <h2>Referensi</h2>
+    <p>Referensi tersedia atas permintaan.</p>
+  </main>
+
+</div>
 
 </body>
 </html>
