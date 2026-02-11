@@ -133,7 +133,7 @@
   <div class="header">
     <div class="photo">
       <!-- Ganti foto.jpg dengan foto kamu -->
-      <img src="foto.jpg">alt="Foto Profil">
+      <img src="IMG_20250507_134840.jpg">
     </div>
     <div>
       <h1>Fazar Ibrahim</h1>
